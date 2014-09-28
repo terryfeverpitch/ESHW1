@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content"
+	android:background="#ffffffff" 
+    android:orientation="vertical"
+    android:id="@+id/dialog" >
+    
+    <LinearLayout
+    	android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"
+		android:background="#ffffffff" 
+	    android:orientation="horizontal"
+	    android:gravity="center">
+	    <TextView 
+	    	android:layout_height="wrap_content"
+	    	android:layout_width="wrap_content"
+	    	android:id="@+id/textView_text" 
+	    	android:textSize="15dp"
+	    	android:textColor="#000000"
+	    	android:text="Text：" 
+    	/>
+    
+    	<EditText 
+	    	android:layout_height="wrap_content"
+	    	android:layout_width="fill_parent" 
+	    	android:id="@+id/editText_text" 
+	    	android:minWidth="100dip"
+	    />
+	</LinearLayout>
+	
+	<LinearLayout
+    	android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"
+		android:background="#ffffffff" 
+	    android:orientation="horizontal" 
+	    android:gravity="center">
+	    <TextView 
+	    	android:layout_height="wrap_content"
+	    	android:layout_width="wrap_content"
+	    	android:id="@+id/textView_fontSize" 
+	    	android:textSize="15dp"
+	    	android:textColor="#000000"
+	    	android:text="Font Size: " 
+    	/>
+    	
+	    <EditText 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_width="fill_parent"
+	    	android:layout_weight="1" 
+	    	android:id="@+id/editText_fontSize" 	    	
+	    	android:inputType="number"
+	    />
+	</LinearLayout>
+	
+	<LinearLayout
+    	android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"
+		android:background="#ffffffff" 
+	    android:orientation="horizontal" 
+	    android:gravity="center">
+	    <TextView 
+	    	android:layout_height="wrap_content"
+	    	android:layout_width="wrap_content"
+	    	android:id="@+id/textView_foreground" 
+	    	android:textSize="15dp"
+	    	android:textColor="#000000"
+	    	android:text="Foreground: " 
+    	/>
+	    <Spinner 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_width="fill_parent" 
+	    	android:layout_weight="1" 
+	    	android:id="@+id/spinner_foreground" 
+	    	android:textSize="32sp" 	
+	    />
+	</LinearLayout>
+	
+	<LinearLayout
+    	android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"
+		android:background="#ffffffff" 
+	    android:orientation="horizontal" 
+	    android:gravity="center">
+	    <TextView 
+	    	android:layout_height="wrap_content"
+	    	android:layout_width="wrap_content"
+	    	android:id="@+id/textView_background" 
+	    	android:textSize="15dp"
+	    	android:textColor="#000000"
+	    	android:text="Background: " 
+    	/>
+	    <Spinner 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_width="fill_parent" 
+	    	android:layout_weight="1" 
+	    	android:id="@+id/spinner_background" 
+	    	android:textSize="32sp"
+	    />
+	</LinearLayout>
+  
+</LinearLayout>
